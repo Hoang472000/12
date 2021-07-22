@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_left">56px</dimen>
+    <dimen name="margin_left">356px</dimen>
+
+    <dimen name="padding_top">40dp</dimen>
+
+    <dimen name="statusbar_height">24dp</dimen>
+</resources>
