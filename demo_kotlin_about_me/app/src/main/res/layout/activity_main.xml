@@ -1,83 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:layout_margin="@dimen/padding_left"
-    tools:context=".MainActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:padding="@dimen/padding_left"
-        android:layout_marginLeft="@dimen/margin_left"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="373dp"
+        android:layout_height="684dp"
+        android:layout_margin="@dimen/padding_left"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/edit_text"
-        android:layout_width="349dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/padding_left"
-        android:hint="@string/text_hint"
-        android:padding="@dimen/padding_left"
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:padding="@dimen/padding_left"
+            android:text="Hello World!"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_left"
+            android:hint="@string/text_hint"
+            android:padding="@dimen/padding_left"
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="122dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/margin_left"
-        android:text="@string/button"
-        android:onClick="HandleClick"
-        tools:ignore="OnClick" />
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="122dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/margin_left"
-        android:text="@string/button1"
-        android:visibility="gone"
-        android:onClick="click"
-        tools:ignore="OnClick" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/btn_star_big_on" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:onClick="HandleClick"
+            android:text="@string/button"
+            tools:ignore="OnClick" />
 
-    <ScrollView
-        android:layout_width="383dp"
-        android:layout_height="match_parent"
-        >
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:onClick="click"
+            android:text="@string/button1"
+            android:visibility="gone"
+            tools:ignore="OnClick" />
 
-        <LinearLayout
+        <ImageView
+            android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="@dimen/padding_left">
+            app:srcCompat="@android:drawable/btn_star_big_on" />
 
-            <TextView
-                android:id="@+id/textView"
+        <ScrollView
+            android:layout_width="383dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:text="@string/bio" />
-        </LinearLayout>
-    </ScrollView>
+                android:orientation="vertical"
+                android:padding="@dimen/padding_left">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bio"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </ScrollView>
 
 
-
-
-</LinearLayout>
+    </LinearLayout>
+</layout>
